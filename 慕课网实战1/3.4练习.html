@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../dict/css/bootstrap.css"/>
+    <script src="../jquery-1.9.1/jquery.js"></script>
+    <script src="../dict/js/bootstrap.js"></script>
+    <title>demo1</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!--//或者可以使用container-fluid-->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a href="javascript:;" class="navbar-brand">某管理系统</a>
+        </div>
+        <div class="navbar-collapse collapse " id="my-navbar-items">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="javascript:;">首页 <span class="sr-only">(current)</span></a></li>
+                <li class=" dropdown " ><a  class="dropdown-toggle"  data-toggle="dropdown" role="button"  aria-expanded="false" href="javascript:;">功能 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#" class="dropdown-header">业务功能</a></li>
+                        <li><a href="#">信息建立</a></li>
+                        <li><a href="#">信息查询</a></li>
+                        <li><a href="#">信息管理</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#" class="dropdown-header">系统功能</a></li>
+                        <li><a href="#">管理系统</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">帮助</a></li>
+            </ul>
+            <form action="" class="navbar-form navbar-right ">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="用户名">
+                    <input type="password" class="form-control" placeholder="密码">
+                </div>
+                <button type="submit" class="btn btn-default">提交</button>
+            </form>
+        </div>
+
+    </div>
+
+</nav>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap</title>
+
+    <link rel="stylesheet" href="dict/css/bootstrap.min.css"/>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+    }
+    ul{
+        list-style: none;
+    }
+    .main-left{
+        height:auto;
+        background-color: #ccc;
+        text-align: center;
+    }
+    .main-search {
+        padding: 20px 20px 20px 100px;
+        text-align: center;
+        background-color: skyblue;
+        overflow: hidden;
+    }
+    #search {
+        border: none;
+        height: 32px;
+        width: 60%;
+        border-radius: 10px 0 0 10px;
+        outline: none;
+        font-size: 30px;
+        padding-left: 40px;
+        background:url(images/search.png) no-repeat left center #ccc;
+        float: left;
+    }
+    #btn{
+        height: 32px;
+        border: none;
+        float: left;
+        background-color: #40D2B1;
+        border-radius: 0 10px 10px 0;
+        padding:0 20px 0 20px;
+        text-align: center;
+        outline: none;
+    }
+    .main-left ul li{
+        height: 120px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .right-tag{
+        padding: 20px;
+        width: 100%;
+        background: url(images/Tag.png) no-repeat right center ;
+        overflow: hidden;
+
+    }
+    .right-tag ul li{
+        margin-right: 20px;
+        height: 32px;
+        width: 80px;
+        float: left;
+        background-color: red;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 10px;
+    }
+    .right-main{
+        width: 100%;
+        height:700px;
+        background-color: grey;
+    }
+    .right-link{
+        margin-top: 20px;
+        width: 100%;
+        height: 100px;
+
+    }
+    .right-link #magnetic-link{
+        width: 100%;
+        height: 40px;
+        outline: none;
+    }
+    .right-title{
+        width: 100%;
+        height:70px;
+        background-color: red;
+        text-align: center;
+        line-height: 70px;
+
+    }
+    .right-title input{
+        width:80%;
+        height: 35px;
+        border: none;
+        font-size: 20px;
+        outline: none;
+
+    }
+
+    .right-main{
+        width: 100%;
+        height:700px;
+        background-color: grey;
+    }
+    .right-link{
+        margin-top: 20px;
+        width: 100%;
+        height: 100px;
+
+    }
+    .right-link #magnetic-link{
+        width: 100%;
+        height: 40px;
+        outline: none;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="col-md-4">
+        <div class="main-left">
+            <div class="main-search">
+                <input type="text" id="search" /><input id="btn" type="button" value="搜索"/>
+            </div>
+            <ul>
+                <li><a href="">蜘蛛侠</a></li>
+                <li><a href="">天龙八部</a></li>
+                <li><a href="">神雕侠侣</a></li>
+                <li><a href="">天行九歌</a></li>
+                <li><a href="">春光灿烂猪八戒</a></li>
+                <li><a href="">小鱼儿与花无缺</a></li>
+                <li><a href="">镖行天下</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="right-title">Title:<input type="text"/></div>
+
+
+        <div class="right-main">插入图片路径: <input type="file"/></div>
+        <div class="right-link">
+            <textarea name="" id="magnetic-link" cols="30" rows="10">磁力链接：http//:www.movie.com</textarea>
+        </div>
+    </div>
+
+    </div>
+</div>
+</body>
+</html>
